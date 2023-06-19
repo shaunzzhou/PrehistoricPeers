@@ -10,7 +10,7 @@ export default function LoginSignUp({ navigation }) {
       <ImageBackground 
       source={require("../images/Login:SignUp/bg.png")}
       style={styles.backgroundImage}>
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center"}}>
+    <View style={styles.container}>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Login")}
@@ -33,10 +33,15 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
   },
+  container: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    paddingBottom: 30,
+  },
   button: {
     width: 180,
     height: 100,
-    top: 250,
     alignItems: "center",
     
   },
@@ -45,38 +50,4 @@ const styles = StyleSheet.create({
     height: "100%",
     resizeMode: "contain",
   },
-  // button: {
-  //   padding: 10,
-  //   marginTop: 20,
-  //   width: 200,
-  //   backgroundColor: "#648839",
-  //   borderRadius: 10,
-  //   shadowColor: "#171717",
-  //   shadowOffset: { width: -2, height: 4 },
-  //   shadowOpacity: 0.15,
-  //   shadowRadius: 3,
-  //   borderWidth: 2,
-  //   borderColor: "`rgba(0,0,0,0.4)`",
-  //   justifyContent: "center",
-  //   alignSelf: "center",
-  //   marginBottom: 30,
-  //   alignItems: "center",
-  //   marginBottom: 30,
-  // },
-  // button_text: {
-  //   fontSize: 16,
-  //   lineHeight: 21,
-  //   letterSpacing: 0.25,
-  //   color: "white",
-  // },
-  // text: {
-  //   fontWeight: "bold",
-  //   fontSize: 60,
-  //   marginBottom: 30,
-  // },
-  // logo: {
-  //   width: 305.62,
-  //   height: 370,
-  //   marginBottom: 25,
-  // },
 });
