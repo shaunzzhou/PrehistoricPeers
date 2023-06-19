@@ -7,7 +7,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 export default function LoginSignUp({ navigation }) {
   return (
-      <ImageBackground 
+    <ImageBackground 
       source={require("../images/Login:SignUp/bg.png")}
       style={styles.backgroundImage}>
     <View style={styles.container}>
@@ -23,6 +23,14 @@ export default function LoginSignUp({ navigation }) {
       >
         <Image source={require("../images/Login:SignUp/signup.png")} style={styles.image}/>
       </TouchableOpacity>
+      
+      {/* <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("CreateDinosaur")}
+      >
+        <Image source={require("../images/Login:SignUp/signup.png")} style={styles.image}/>
+      </TouchableOpacity> */}
+
     </View>
     </ImageBackground>
   );
