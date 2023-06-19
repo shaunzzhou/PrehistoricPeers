@@ -8,6 +8,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 export default function InstructionScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Image source={require("../images/Login/bg.png")} />
       <Text
         style={{
           fontWeight: "bold",
@@ -19,18 +20,29 @@ export default function InstructionScreen({ navigation }) {
       </Text>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-      <Image style={styles.logo} source={require("../assets/customize.png")} />
-        <Text style={styles.instructions_text1}>  Step 1: Customize metrics{"\n"}  based on your scheduling needs!</Text>
+        <Image
+          style={styles.logo}
+          source={require("../assets/customize.png")}
+        />
+        <Text style={styles.instructions_text1}>
+          {" "}
+          Step 1: Customize metrics{"\n"} based on your scheduling needs!
+        </Text>
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <Text style={styles.instructions_text2}>Step 2: Share the link and wait for  {"\n"}the responses to come in!  </Text>
+        <Text style={styles.instructions_text2}>
+          Step 2: Share the link and wait for {"\n"}the responses to come in!{" "}
+        </Text>
         <Image style={styles.logo} source={require("../assets/input.png")} />
       </View>
 
-      <View style={{ flexDirection: "row", justifyContent: "space-between"}}>
-      <Image style={styles.logo} source={require("../assets/algo.png")} />
-        <Text style={styles.instructions_text1}>  Step 3: Run the algorithm to{"\n"}  generate a schedule! </Text>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <Image style={styles.logo} source={require("../assets/algo.png")} />
+        <Text style={styles.instructions_text1}>
+          {" "}
+          Step 3: Run the algorithm to{"\n"} generate a schedule!{" "}
+        </Text>
       </View>
 
       <TouchableOpacity
@@ -57,7 +69,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "`rgba(0,0,0,0.4)`",
     justifyContent: "center",
-
   },
   button_text: {
     fontSize: 16,
