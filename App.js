@@ -21,44 +21,9 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen
-        name="LoginSignUp"
-        component={LoginSignUp}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen
-        name="SignUp"
-        component={SignUp}
-        options={{
-          headerShown: false,
-          headerLeft: () => (
-            <TouchableOpacity>
-              <Image
-                style={styles.back}
-                source={require("./images/Login/back.png")}
-                onPress={() => props.navigate("LoginSignUp")}
-              />
-            </TouchableOpacity>
-          ),
-        }}
-      />
-      <Stack.Screen
-        name="Login"
-        component={Login}
-        options={{
-          headerShown: false,
-          headerLeft: () => (
-            <Button onPress={() => props.navigate("LoginSignUp")}>Back</Button>
-          ),
-        }}
-      />
-      <Stack.Screen
-        name="Garden"
-        component={Garden}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="Welcome" component={LoginSignUp} />
+      <Stack.Screen name="Set Commitments" component={SignUp} />
+      <Stack.Screen name="Instructions" component={Login} />
       <Stack.Screen name="Customize" component={CustomizeScreen} />
       <Stack.Screen name="Get Commitments" component={CommitmentScreenStack1} />
       <Stack.Screen

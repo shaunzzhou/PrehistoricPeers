@@ -1,10 +1,12 @@
 import * as React from "react";
 import { ImageBackground, View, StyleSheet, Image } from "react-native";
+import { ImageBackground, View, StyleSheet, Image } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
+export default function LoginSignUp({ navigation }) {
 export default function LoginSignUp({ navigation }) {
   return (
     <ImageBackground
@@ -47,19 +49,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingBottom: 50,
   },
-  loginButton: {
-    width: 180,
-    height: 100,
-    alignItems: "center",
+  button_text: {
+    fontSize: 16,
+    lineHeight: 21,
+    letterSpacing: 0.25,
+    color: "white",
   },
-  signUpButton: {
-    width: 180,
-    height: 100,
-    alignItems: "center",
+  text: {
+    fontWeight: "bold",
+    fontSize: 60,
+    marginBottom: 30,
   },
-  image: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "contain",
+  logo: {
+    width: 305.62,
+    height: 370,
+    marginBottom: 25,
   },
 });
