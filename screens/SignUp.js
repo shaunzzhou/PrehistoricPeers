@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   },
   usernameContainer: {
     width: 250,
-    marginTop: 250,
+    marginTop: 230,
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     width: 250,
-    marginTop: 15,
+    marginTop: 10,
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    marginTop: 30,
+    marginTop: 20,
   },
   switchRow: {
     flexDirection: "row",
