@@ -159,6 +159,7 @@ const styles = StyleSheet.create({
     color: "#F9EEDF",
     fontSize: 20,
     marginLeft: 5,
+    fontFamily: 'Dekko',
   },
   forgotContainer: {
     marginTop: 30,
@@ -168,6 +169,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textDecorationLine: "underline",
     marginLeft: 5,
+    fontFamily: 'Dekko',
   },
   loginButton: {
     marginTop: 20,

@@ -24,7 +24,7 @@ import Pumpkin from "./screens/Shop/Pumpkin";
 import Saw from "./screens/Shop/Saw";
 import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
-import { useFonts, Dekko_400Regular } from "@expo-google-fonts/dekko";
+import { useFonts } from "expo-font";
 
 function BackButton() {
   const navigation = useNavigation();
@@ -106,6 +106,9 @@ function MyStack() {
 }
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Dekko': require('./assets/fonts/Dekko.ttf')
+  })
   return (
     <NavigationContainer>
       <MyStack />
