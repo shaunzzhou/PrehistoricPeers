@@ -24,6 +24,7 @@ import Pumpkin from "./screens/Shop/Pumpkin";
 import Saw from "./screens/Shop/Saw";
 import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
+import Inventory from "./screens/Inventory/Inventory";
 import { useFonts } from "expo-font";
 
 function BackButton() {
@@ -92,6 +93,7 @@ function MyStack() {
       <Stack.Screen name="Witch" component={Witch} options={{headerShown: false}}/>
       <Stack.Screen name="Customize" component={CustomizeScreen} />
       <Stack.Screen name="Get Commitments" component={CommitmentScreenStack1} />
+      <Stack.Screen name="Inventory" component={Inventory} />
       <Stack.Screen
         name="Individual Commitments"
         component={IndividualCommitmentScreen}
