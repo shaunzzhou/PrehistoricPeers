@@ -26,61 +26,50 @@ const Stack = createStackNavigator();
 
 function MyStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ animationEnabled: false, headerShown: false }}>
       <Stack.Screen
         name="LoginSignUp"
         component={LoginSignUp}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="SignUp"
         component={SignUp}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Login"
         component={Login}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Flamingo"
         component={Flamingo}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="CrowHat"
         component={CrowHat}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Mask"
         component={Mask}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Leaf"
         component={Leaf}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Knife"
         component={Knife}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="PaperHat"
         component={PaperHat}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="ChooseDinosaur"
         component={ChooseDinosaur}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="Garden"
         component={Garden}
-        options={{ headerShown: false }}
       />
       <Stack.Screen name="Customize" component={CustomizeScreen} />
       <Stack.Screen name="Get Commitments" component={CommitmentScreenStack1} />
