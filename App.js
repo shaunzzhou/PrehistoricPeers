@@ -18,6 +18,7 @@ import Mask from "./screens/CreateDinosaur/Mask";
 import Leaf from "./screens/CreateDinosaur/Leaf";
 import Knife from "./screens/CreateDinosaur/Knife";
 import PaperHat from "./screens/CreateDinosaur/PaperHat";
+import ChooseDinosaur from "./screens/ChooseDinosaur";
 import Garden from "./screens/Garden";
 import { useFonts, Dekko_400Regular } from "@expo-google-fonts/dekko";
 
@@ -69,6 +70,11 @@ function MyStack() {
       <Stack.Screen
         name="PaperHat"
         component={PaperHat}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="ChooseDinosaur"
+        component={ChooseDinosaur}
         options={{ headerShown: false }}
       />
       <Stack.Screen

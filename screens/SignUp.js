@@ -97,10 +97,9 @@ export default function SignUp({ navigation }) {
               ios_backgroundColor="#D3D3D3"
               onValueChange={toggleSwitch1}
               value={isEnabled1}
-
             />
-            <Text style={{color:'#F9EEDF', marginLeft: 5}}>
-              I agree with {" "}
+            <Text style={{ color: "#F9EEDF", marginLeft: 5 }}>
+              I agree with{" "}
               <Text style={{ textDecorationLine: "underline" }}>
                 Terms and {"\n"} Conditions
               </Text>
@@ -115,18 +114,27 @@ export default function SignUp({ navigation }) {
               onValueChange={toggleSwitch2}
               value={isEnabled2}
             />
-            <Text style={{color:'#F9EEDF', lineHeight: 20, marginLeft: 5}}>I want to receive news and promotions</Text>
+            <Text style={{ color: "#F9EEDF", lineHeight: 20, marginLeft: 5 }}>
+              I want to receive news and promotions
+            </Text>
           </View>
-          
+
           <View>
-            <Text style={{color:'#F9EEDF', marginTop: 5}}>Already have an account? <Text style={{color:"#FFB7B7", textDecorationLine:'underline'}}>Log In</Text></Text>
+            <Text style={{ color: "#F9EEDF", marginTop: 5 }}>
+              Already have an account?{" "}
+              <Text
+                style={{ color: "#FFB7B7", textDecorationLine: "underline" }}
+              >
+                Log In
+              </Text>
+            </Text>
           </View>
         </View>
 
         <View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("CreateDinosaur")}
+            onPress={() => navigation.navigate("Flamingo")}
           >
             <Image
               style={styles.loginButton}
@@ -216,12 +224,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#A38573",
     justifyContent: "center",
     alignItems: "center",
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 30,
   },
   switchRow: {
-    flexDirection: 'row',
-    width: '75%',
+    flexDirection: "row",
+    width: "75%",
     paddingBottom: 7,
   },
 });

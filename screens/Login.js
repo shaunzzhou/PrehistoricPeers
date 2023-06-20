@@ -71,7 +71,7 @@ export default function Login({ navigation }) {
         <View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("Flamingo")}
+            onPress={() => navigation.navigate("ChooseDinosaur")}
           >
             <Image
               style={styles.loginButton}
