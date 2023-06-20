@@ -121,6 +121,8 @@ const styles = StyleSheet.create({
     width: 150,
     color: "rgb(163, 133, 115)",
     textAlign: "center",
+    fontFamily: "Dekko",
+    fontSize: 28,
   },
   passwordContainer: {
     width: 250,
@@ -148,6 +150,8 @@ const styles = StyleSheet.create({
     width: 150,
     color: "rgb(163, 133, 115)",
     textAlign: "center",
+    fontFamily: "Dekko",
+    fontSize: 28,
   },
   rememberContainer: {
     marginTop: 20,
@@ -157,17 +161,20 @@ const styles = StyleSheet.create({
   },
   rememberText: {
     color: "#F9EEDF",
-    fontSize: 20,
+    fontSize: 24,
     marginLeft: 5,
     fontFamily: 'Dekko',
   },
   forgotContainer: {
     marginTop: 30,
+    borderBottomWidth: 2,
+    borderColor: "#F9EEDF",
+    
   },
   forgotText: {
     color: "#F9EEDF",
-    fontSize: 20,
-    textDecorationLine: "underline",
+    fontSize: 26,
+    // textDecorationLine: "underline",
     marginLeft: 5,
     fontFamily: 'Dekko',
   },
