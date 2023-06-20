@@ -12,16 +12,15 @@ export default function ChooseDinosaur({ navigation }) {
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Garden")}
-      >
-        <Image
-          source={require("../images/ChooseDinosaur/enter.png")}
-          style={styles.buttonImage}
-        />
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("Garden")}
+        >
+          <Image
+            source={require("../images/ChooseDinosaur/enter.png")}
+            style={styles.buttonImage}
+          />
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
@@ -34,13 +33,12 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "center",
-    marginTop: 650,
+    marginTop: 600,
   },
   button: {
     width: 180,
     height: 100,
     // marginTop: 30,
-    
   },
   buttonImage: {
     width: "100%",
