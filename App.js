@@ -12,9 +12,10 @@ import IndividualCommitmentScreen from "./screens/IndividualCommitmentScreen";
 import GeneratingScreen from "./screens/GeneratingScreen";
 import CalendarScreen from "./screens/CalendarScreen";
 import SignUp from "./screens/SignUp";
+import CreateDinosaur from "./screens/CreateDinosaur";
 import Garden from "./screens/Garden";
 import { useFonts, Dekko_400Regular } from "@expo-google-fonts/dekko";
-import { Button } from "@rneui/base";
+
 
 const Stack = createStackNavigator();
 
@@ -34,6 +35,11 @@ function MyStack() {
       <Stack.Screen
         name="Login"
         component={Login}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CreateDinosaur"
+        component={CreateDinosaur}
         options={{ headerShown: false }}
       />
       <Stack.Screen
