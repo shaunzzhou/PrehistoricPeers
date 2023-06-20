@@ -1,25 +1,9 @@
 import * as React from "react";
 import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-
-function BackButton() {
-  const navigation = useNavigation();
-  return (
-    <TouchableOpacity
-      onPress={() => {
-        navigation.navigate("Garden");
-      }}
-    >
-      <Image
-        style={{ width: 90, height: 42, marginLeft: 5 }}
-        source={require("../../images/back.png")}
-      />
-    </TouchableOpacity>
-  );
-}
 
 export default function Saw({ navigation }) {
   return (
@@ -27,9 +11,6 @@ export default function Saw({ navigation }) {
       source={require("../../images/Shop/bg.png")}
       style={styles.backgroundImage}
     >
-      <View style={styles.backButton}>
-        <BackButton />
-      </View>
       <View style={styles.container}>
         <ImageBackground
           source={require("../../images/Shop/saw.png")}
@@ -63,16 +44,12 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: "cover",
-    width: 414,
+    width: 390,
     height: 900,
-  },
-  backButton: {
-    marginTop: 106,
-    marginLeft: 10,
   },
   container: {
     alignItems: "center",
-    marginTop: 50,
+    marginTop: 180,
   },
   itemsImage: {
     width: 390,
