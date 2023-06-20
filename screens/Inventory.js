@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-export default function ChooseDinosaur({ navigation }) {
+export default function Inventory({ navigation }) {
   return (
     <ImageBackground
       source={require("../../images/Inventory/bg.png")}
