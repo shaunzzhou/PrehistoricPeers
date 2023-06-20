@@ -41,6 +41,22 @@ function BackButton() {
     </TouchableOpacity>
   );
 }
+
+function BackCreateDinosaur() {
+  const navigation = useNavigation();
+  return (
+    <TouchableOpacity
+      onPress={() => {
+        navigation.navigate("SignUp");
+      }}
+    >
+      <Image
+        style={{ width: 90, height: 42, marginLeft: 5 }}
+        source={require("./images/back.png")}
+      />
+    </TouchableOpacity>
+  );
+}
 const Stack = createStackNavigator();
 
 function MyStack() {
@@ -62,12 +78,12 @@ function MyStack() {
       />
       <Stack.Screen name="SignUp" component={SignUp} />
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Flamingo" component={Flamingo} />
-      <Stack.Screen name="CrowHat" component={CrowHat} />
-      <Stack.Screen name="Mask" component={Mask} />
-      <Stack.Screen name="Leaf" component={Leaf} />
-      <Stack.Screen name="Knife" component={Knife} />
-      <Stack.Screen name="PaperHat" component={PaperHat} />
+      <Stack.Screen name="Flamingo" component={Flamingo} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
+      <Stack.Screen name="CrowHat" component={CrowHat} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
+      <Stack.Screen name="Mask" component={Mask} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
+      <Stack.Screen name="Leaf" component={Leaf} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
+      <Stack.Screen name="Knife" component={Knife}options={{headerLeft: () => <BackCreateDinosaur/>}} />
+      <Stack.Screen name="PaperHat" component={PaperHat} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
       <Stack.Screen name="ChooseDinosaur" component={ChooseDinosaur} />
       <Stack.Screen name="Garden" component={Garden} options={{headerShown: false}}/>
       <Stack.Screen name="Pumpkin" component={Pumpkin} options={{headerShown: false}}/>
