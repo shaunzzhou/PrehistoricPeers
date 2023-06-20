@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: "cover",
-    width: 414,
+    width: 390,
     height: 900,
   },
   container: {
