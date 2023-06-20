@@ -63,11 +63,11 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: "cover",
     width: 390,
-    height: 900,
+    height: 760,
   },
   container: {
     alignItems: "center",
-    marginTop: 450,
+    marginTop: 380,
   },
   itemsImage: {
     width: 370,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     width: 180,
     height: 100,
     alignItems: "center",
-    marginTop: 30,
+    marginTop: 10,
   },
   buttonImage: {
     width: "100%",
