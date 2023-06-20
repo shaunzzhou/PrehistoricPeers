@@ -31,12 +31,10 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: "cover",
-    width: 414,
-    height: 900,
   },
   container: {
     alignItems: "center",
-    marginTop: 750,
+    marginTop: 650,
   },
   button: {
     width: 180,
