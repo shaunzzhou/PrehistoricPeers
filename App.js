@@ -25,7 +25,7 @@ import Saw from "./screens/Shop/Saw";
 import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
 import Gifts from "./screens/Shop/Gifts";
-import Inventory from "./screens/Inventory/Inventory";
+import Inventory from "./screens/Inventory";
 import { useFonts } from "expo-font";
 
 function BackButton() {
