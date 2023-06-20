@@ -12,10 +12,14 @@ import IndividualCommitmentScreen from "./screens/IndividualCommitmentScreen";
 import GeneratingScreen from "./screens/GeneratingScreen";
 import CalendarScreen from "./screens/CalendarScreen";
 import SignUp from "./screens/SignUp";
-import CreateDinosaur from "./screens/CreateDinosaur";
+import Flamingo from "./screens/CreateDinosaur/Flamingo";
+import CrowHat from "./screens/CreateDinosaur/CrowHat";
+import Mask from "./screens/CreateDinosaur/Mask";
+import Leaf from "./screens/CreateDinosaur/Leaf";
+import Knife from "./screens/CreateDinosaur/Knife";
+import PaperHat from "./screens/CreateDinosaur/PaperHat";
 import Garden from "./screens/Garden";
 import { useFonts, Dekko_400Regular } from "@expo-google-fonts/dekko";
-
 
 const Stack = createStackNavigator();
 
@@ -38,8 +42,33 @@ function MyStack() {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="CreateDinosaur"
-        component={CreateDinosaur}
+        name="Flamingo"
+        component={Flamingo}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CrowHat"
+        component={CrowHat}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Mask"
+        component={Mask}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Leaf"
+        component={Leaf}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Knife"
+        component={Knife}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="PaperHat"
+        component={PaperHat}
         options={{ headerShown: false }}
       />
       <Stack.Screen
