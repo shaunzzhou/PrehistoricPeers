@@ -13,7 +13,7 @@ export default function Garden({ navigation }) {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.shopbutton}
-          onPress={() => navigation.navigate("Shop")}
+          onPress={() => navigation.navigate("Pumpkin")}
         ></TouchableOpacity>
         <TouchableOpacity
           style={styles.mailbutton}

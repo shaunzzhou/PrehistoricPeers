@@ -20,6 +20,10 @@ import Knife from "./screens/CreateDinosaur/Knife";
 import PaperHat from "./screens/CreateDinosaur/PaperHat";
 import ChooseDinosaur from "./screens/ChooseDinosaur";
 import Garden from "./screens/Garden";
+import Pumpkin from "./screens/Shop/Pumpkin";
+import Saw from "./screens/Shop/Saw";
+import Halo from "./screens/Shop/Halo";
+import Witch from "./screens/Shop/Witch";
 import { useFonts, Dekko_400Regular } from "@expo-google-fonts/dekko";
 
 const Stack = createStackNavigator();
@@ -70,6 +74,22 @@ function MyStack() {
       <Stack.Screen
         name="Garden"
         component={Garden}
+      />
+      <Stack.Screen
+        name="Pumpkin"
+        component={Pumpkin}
+      />
+      <Stack.Screen
+        name="Saw"
+        component={Saw}
+      />
+      <Stack.Screen
+        name="Halo"
+        component={Halo}
+      />
+      <Stack.Screen
+        name="Witch"
+        component={Witch}
       />
       <Stack.Screen name="Customize" component={CustomizeScreen} />
       <Stack.Screen name="Get Commitments" component={CommitmentScreenStack1} />
