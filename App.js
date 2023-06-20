@@ -24,6 +24,7 @@ import Pumpkin from "./screens/Shop/Pumpkin";
 import Saw from "./screens/Shop/Saw";
 import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
+import Gifts from "./screens/Shop/Gifts";
 import Inventory from "./screens/Inventory/Inventory";
 import { useFonts } from "expo-font";
 
@@ -91,6 +92,7 @@ function MyStack() {
       <Stack.Screen name="Saw" component={Saw} options={{headerShown: false}}/>
       <Stack.Screen name="Halo" component={Halo} options={{headerShown: false}}/>
       <Stack.Screen name="Witch" component={Witch} options={{headerShown: false}}/>
+      <Stack.Screen name="Gifts" component={Gifts} options={{headerShown: false}}/>
       <Stack.Screen name="Customize" component={CustomizeScreen} />
       <Stack.Screen name="Get Commitments" component={CommitmentScreenStack1} />
       <Stack.Screen name="Inventory" component={Inventory} />
