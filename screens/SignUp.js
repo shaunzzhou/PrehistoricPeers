@@ -98,14 +98,7 @@ export default function SignUp({ navigation }) {
               onValueChange={toggleSwitch1}
               value={isEnabled1}
             />
-            <Text
-              style={{
-                color: "#F9EEDF",
-                marginLeft: 5,
-                fontFamily: "Dekko",
-                fontSize: 16,
-              }}
-            >
+            <Text style={{ color: "#F9EEDF", marginLeft: 5 }}>
               I agree with{" "}
               <Text style={{ textDecorationLine: "underline" }}>
                 Terms and {"\n"} Conditions
@@ -121,28 +114,13 @@ export default function SignUp({ navigation }) {
               onValueChange={toggleSwitch2}
               value={isEnabled2}
             />
-            <Text
-              style={{
-                color: "#F9EEDF",
-                lineHeight: 20,
-                marginLeft: 5,
-                fontFamily: "Dekko",
-                fontSize: 16,
-              }}
-            >
+            <Text style={{ color: "#F9EEDF", lineHeight: 20, marginLeft: 5 }}>
               I want to receive news and promotions
             </Text>
           </View>
 
           <View>
-            <Text
-              style={{
-                color: "#F9EEDF",
-                marginTop: 5,
-                fontFamily: "Dekko",
-                fontSize: 16,
-              }}
-            >
+            <Text style={{ color: "#F9EEDF", marginTop: 5 }}>
               Already have an account?{" "}
               <Text
                 style={{ color: "#FFB7B7", textDecorationLine: "underline" }}
@@ -173,6 +151,7 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: "center",
+    height: 760,
   },
   back: {
     width: 90,
@@ -182,14 +161,14 @@ const styles = StyleSheet.create({
   },
   usernameContainer: {
     width: 250,
-    marginTop: 230,
+    marginTop: 140,
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
     backgroundColor: "#F9EEDF",
     padding: 25,
-    width: 300,
+    width: 220,
     borderWidth: 2,
     borderColor: "rgb(163, 133, 115)",
     borderRadius: 50,
@@ -203,12 +182,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#F9EEDF",
     paddingLeft: 10,
     height: 25,
-    width: 228,
+    width: 150,
     color: "rgb(163, 133, 115)",
-    fontFamily: "Dekko",
-    fontSize: 25,
   },
   textContainer: {
+    width: 250,
     marginTop: 10,
     flex: 1,
     // justifyContent: "center",
@@ -216,7 +194,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     backgroundColor: "#F9EEDF",
     padding: 25,
-    width: 300,
+    width: 220,
     borderWidth: 2,
     borderColor: "rgb(163, 133, 115)",
     borderRadius: 50,
@@ -226,10 +204,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#F9EEDF",
     paddingLeft: 10,
     height: 25,
-    width: 228,
+    width: 150,
     color: "rgb(163, 133, 115)",
-    fontFamily: "Dekko",
-    fontSize: 25,
   },
   lock: {
     width: 20,
