@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
-import { NavigationContainer, useNavigation} from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -34,6 +34,10 @@ export default function Gifts({ navigation }) {
           source={require("../../images/Shop/gifts.png")}
           style={styles.itemsImage}
         >
+          <TouchableOpacity
+            style={styles.tab}
+            onPress={() => navigation.navigate("Pumpkin")}
+          ></TouchableOpacity>
           {/* <View style={styles.itemContainer}>
             <TouchableOpacity
               style={styles.item}
@@ -65,6 +69,13 @@ const styles = StyleSheet.create({
     width: 390,
     height: 900,
   },
+  tab: {
+    backgroundColor: "rgba(0,0,0,0.1)",
+    width: 90,
+    height: 30,
+    marginLeft: 10,
+    marginTop: 10,
+  },
   backButton: {
     marginTop: 106,
   },
@@ -75,7 +86,7 @@ const styles = StyleSheet.create({
   itemsImage: {
     width: 380,
     height: 590,
-    marginRight: 5
+    marginRight: 5,
   },
   itemContainer: {
     flexDirection: "row",
