@@ -25,6 +25,10 @@ import InventoryLeaf from "./screens/Inventory/InventoryLeaf";
 import InventoryMask from "./screens/Inventory/InventoryMask";
 import InventoryPaperbag from "./screens/Inventory/InventoryPaperbag";
 import InventoryPlague from "./screens/Inventory/InventoryPlague";
+import Mail from "./screens/Review/Mail";
+import WritingReview from "./screens/Review/WritingReview";
+import ReadingReview from "./screens/Review/ReadingReview";
+import Congratulations from "./screens/Review/Congratulations";
 import Loading from  "./screens/Loading";
 import { useFonts } from "expo-font";
 
@@ -97,6 +101,10 @@ function MyStack() {
       <Stack.Screen name="Halo" component={Halo} options={{headerShown: false}}/>
       <Stack.Screen name="Witch" component={Witch} options={{headerShown: false}}/>
       <Stack.Screen name="Gifts" component={Gifts} options={{headerShown: false}}/>
+      <Stack.Screen name="Mail" component={Mail}/>
+      <Stack.Screen name="WritingReview" component={WritingReview}/>
+      <Stack.Screen name="ReadingReview" component={ReadingReview}/>
+      <Stack.Screen name="Congratulations" component={Congratulations}/>
       <Stack.Screen name="InventoryFlamingo" component={InventoryFlamingo} />
       <Stack.Screen name="InventoryPlague" component={InventoryPlague} />
       <Stack.Screen name="InventoryMask" component={InventoryMask} />

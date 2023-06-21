@@ -74,8 +74,6 @@ const styles = StyleSheet.create({
   item: {
     width: 60,
     height: 60,
-    // backgroundColor: "rgba(0,0,0,0.1)",
-    // borderWidth: 1,
     marginRight: 7,
     marginBottom: 9,
   },
@@ -84,7 +82,6 @@ const styles = StyleSheet.create({
     height: 70,
     width: 170,
     bottom: -30,
-    // backgroundColor: "rgba(0,0,0,0.1)",
   },
   buttonImage: {
     width: "100%",
