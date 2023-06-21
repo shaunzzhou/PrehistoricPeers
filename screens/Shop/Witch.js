@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ImageBackground, View, StyleSheet, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 function BackButton() {
