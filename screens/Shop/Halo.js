@@ -1,7 +1,9 @@
 import * as React from "react";
-import { ImageBackground, View, StyleSheet, Image } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 function BackButton() {
   const navigation = useNavigation();
@@ -32,10 +34,7 @@ export default function Halo({ navigation }) {
           source={require("../../images/Shop/halo.png")}
           style={styles.itemsImage}
         >
-          <TouchableOpacity
-            style={styles.tab}
-            onPress={() => navigation.navigate("Gifts")}
-          ></TouchableOpacity>
+          <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Gifts')}></TouchableOpacity>
           <View style={styles.itemContainer}>
             <TouchableOpacity
               style={styles.item}
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.1)",
     width: 110,
     height: 30,
-    marginLeft: 280,
+    marginLeft: 265,
     marginTop: 10,
   },
   backButton: {
@@ -82,8 +81,8 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   itemsImage: {
-    width: 390,
-    height: 610,
+    width: 375,
+    height: 590,
   },
   itemContainer: {
     flexDirection: "row",
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
     // marginHorizontal: "auto",
     width: 390,
     marginTop: 10,
-    marginLeft: 45,
+    marginLeft: 35,
   },
   item: {
     width: 140,

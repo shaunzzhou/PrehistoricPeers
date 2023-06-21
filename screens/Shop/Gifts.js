@@ -1,7 +1,9 @@
 import * as React from "react";
-import { ImageBackground, View, StyleSheet, Image } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
+import { NavigationContainer, useNavigation} from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 function BackButton() {
   const navigation = useNavigation();
@@ -71,8 +73,9 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   itemsImage: {
-    width: 390,
-    height: 610,
+    width: 380,
+    height: 590,
+    marginRight: 5
   },
   itemContainer: {
     flexDirection: "row",
