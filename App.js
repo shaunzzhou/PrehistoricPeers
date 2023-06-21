@@ -65,6 +65,9 @@ function MyStack() {
           backgroundColor: '#BCD9E0',
         },
         headerTintColor: '#BCD9E0',
+        cardStyle: {
+          backgroundColor: '#BCD9E0',
+        },
       }}
     >
       <Stack.Screen
