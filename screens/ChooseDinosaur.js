@@ -11,7 +11,7 @@ export default function ChooseDinosaur({ navigation }) {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate("Garden")}
+          onPress={() => navigation.navigate("Loading")}
         >
           <Image
             source={require("../images/ChooseDinosaur/enter.png")}

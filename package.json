@@ -36,7 +36,8 @@
     "react-native-table-component": "^1.2.2",
     "react-native-uuid": "^2.0.1",
     "react-native-web": "~0.18.11",
-    "undefined": "@expo-google-fonts/dekko expo-font"
+    "undefined": "@expo-google-fonts/dekko expo-font",
+    "lottie-react-native": "5.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
