@@ -2,24 +2,20 @@ import * as React from "react";
 import { ImageBackground, View, StyleSheet, Image } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-export default function Inventory({ navigation }) {
+export default function InventoryFlamingo({ navigation }) {
   return (
     <ImageBackground
-      source={require("../images/Inventory/bg.png")}
+      source={require("../../images/Inventory/inventoryflamingo.png")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <Image
-          source={require("../images/Inventory/items.png")}
-          style={styles.items}
-        />
 
         <TouchableOpacity
-          style={styles.button}
+          style={styles.applybutton}
           onPress={() => navigation.navigate("Garden")}
         >
           <Image
-            source={require("../images/Inventory/apply.png")}
+            source={require("../../images/Inventory/apply.png")}
             style={styles.buttonImage}
           />
         </TouchableOpacity>
@@ -44,10 +40,12 @@ const styles = StyleSheet.create({
     width: 350,
     height: 400,
   },
-  button: {
-    width: 180,
+  applybutton: {
+    alignItems: "center",
+    position: "absolute",
     height: 100,
-    marginTop: -40,
+    width: 100,
+    bottom: 20,
   },
   buttonImage: {
     width: "100%",

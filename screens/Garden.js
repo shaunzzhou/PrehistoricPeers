@@ -19,7 +19,7 @@ export default function Garden({ navigation }) {
         ></TouchableOpacity>
         <TouchableOpacity
           style={styles.inventorybutton}
-          onPress={() => navigation.navigate("Inventory")}
+          onPress={() => navigation.navigate("InventoryFlamingo")}
         ></TouchableOpacity>
       </View>
     </ImageBackground>

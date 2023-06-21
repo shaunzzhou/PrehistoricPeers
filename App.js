@@ -19,7 +19,12 @@ import Saw from "./screens/Shop/Saw";
 import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
 import Gifts from "./screens/Shop/Gifts";
-import Inventory from "./screens/Inventory";
+import InventoryFlamingo from "./screens/Inventory/InventoryFlamingo";
+import InventoryKnife from "./screens/Inventory/InventoryKnife";
+import InventoryLeaf from "./screens/Inventory/InventoryLeaf";
+import InventoryMask from "./screens/Inventory/InventoryMask";
+import InventoryPaperbag from "./screens/Inventory/InventoryPaperbag";
+import InventoryPlague from "./screens/Inventory/InventoryPlague";
 import Loading from  "./screens/Loading";
 import { useFonts } from "expo-font";
 
@@ -92,7 +97,12 @@ function MyStack() {
       <Stack.Screen name="Halo" component={Halo} options={{headerShown: false}}/>
       <Stack.Screen name="Witch" component={Witch} options={{headerShown: false}}/>
       <Stack.Screen name="Gifts" component={Gifts} options={{headerShown: false}}/>
-      <Stack.Screen name="Inventory" component={Inventory} />
+      <Stack.Screen name="InventoryFlamingo" component={InventoryFlamingo} />
+      <Stack.Screen name="InventoryPlague" component={InventoryPlague} />
+      <Stack.Screen name="InventoryMask" component={InventoryMask} />
+      <Stack.Screen name="InventoryLeaf" component={InventoryLeaf} />
+      <Stack.Screen name="InventoryPaperbag" component={InventoryPaperbag} />
+      <Stack.Screen name="InventoryKnife" component={InventoryKnife} />
     </Stack.Navigator>
   );
 }
