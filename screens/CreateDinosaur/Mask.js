@@ -1,9 +1,6 @@
 import * as React from "react";
-import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { ImageBackground, View, StyleSheet, Image } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 export default function Mask({ navigation }) {
   return (

@@ -1,9 +1,6 @@
 import * as React from "react";
-import { ImageBackground, View, Text, StyleSheet, Image } from "react-native";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { ImageBackground, View, StyleSheet, Image } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 function BackButton() {
   const navigation = useNavigation();
@@ -34,7 +31,10 @@ export default function Halo({ navigation }) {
           source={require("../../images/Shop/halo.png")}
           style={styles.itemsImage}
         >
-          <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Gifts')}></TouchableOpacity>
+          <TouchableOpacity
+            style={styles.tab}
+            onPress={() => navigation.navigate("Gifts")}
+          ></TouchableOpacity>
           <View style={styles.itemContainer}>
             <TouchableOpacity
               style={styles.item}

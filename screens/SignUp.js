@@ -8,8 +8,6 @@ import {
   TextInput,
   Switch,
 } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 export default function SignUp({ navigation }) {
