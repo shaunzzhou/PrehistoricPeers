@@ -20,6 +20,7 @@ import Halo from "./screens/Shop/Halo";
 import Witch from "./screens/Shop/Witch";
 import Gifts from "./screens/Shop/Gifts";
 import Inventory from "./screens/Inventory";
+import Loading from  "./screens/Loading";
 import { useFonts } from "expo-font";
 
 function BackButton() {
@@ -66,8 +67,8 @@ function MyStack() {
         },
         headerTintColor: '#BCD9E0',
         cardStyle: {
-          backgroundColor: '#BCD9E0',
-        },
+          backgroundColor: '#BCD9E0'
+        }
       }}
     >
       <Stack.Screen
@@ -84,6 +85,7 @@ function MyStack() {
       <Stack.Screen name="Knife" component={Knife}options={{headerLeft: () => <BackCreateDinosaur/>}} />
       <Stack.Screen name="PaperHat" component={PaperHat} options={{headerLeft: () => <BackCreateDinosaur/>}}/>
       <Stack.Screen name="ChooseDinosaur" component={ChooseDinosaur} />
+      <Stack.Screen name="Loading" component={Loading} options={{headerShown: false}}/>
       <Stack.Screen name="Garden" component={Garden} options={{headerShown: false}}/>
       <Stack.Screen name="Pumpkin" component={Pumpkin} options={{headerShown: false}}/>
       <Stack.Screen name="Saw" component={Saw} options={{headerShown: false}}/>
