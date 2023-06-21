@@ -8,20 +8,20 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 export default function LoginSignUp({ navigation }) {
   return (
       <ImageBackground 
-      source={require("../images/Login:SignUp/bg.png")}
+      source={require("../images/LoginSignUp/bg.png")}
       style={styles.backgroundImage}>
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Login")}
       >
-        <Image source={require("../images/Login:SignUp/login.png")} style={styles.image}/>
+        <Image source={require("../images/LoginSignUp/login.png")} style={styles.image}/>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("SignUp")}
       >
-        <Image source={require("../images/Login:SignUp/signup.png")} style={styles.image}/>
+        <Image source={require("../images/LoginSignUp/signup.png")} style={styles.image}/>
       </TouchableOpacity>
     </View>
     </ImageBackground>
