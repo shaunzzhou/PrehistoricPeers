@@ -5,27 +5,27 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-export default function ChooseDinosaur({ navigation }) {
+export default function Inventory({ navigation }) {
   return (
     <ImageBackground
-      source={require("../../images/Inventory/bg.png")}
+      source={require("../images/Inventory/bg.png")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-
         <Image
-        source={require("../../images/Inventory/items.png")}
-        style={styles.items}/>
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Garden")}
-      >
-        <Image
-          source={require("../../images/Inventory/apply.png")}
-          style={styles.buttonImage}
+          source={require("../images/Inventory/items.png")}
+          style={styles.items}
         />
-      </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("Garden")}
+        >
+          <Image
+            source={require("../images/Inventory/apply.png")}
+            style={styles.buttonImage}
+          />
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
     width: 180,
     height: 100,
     marginTop: -40,
-    
   },
   buttonImage: {
     width: "100%",
