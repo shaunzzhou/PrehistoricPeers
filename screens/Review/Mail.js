@@ -23,6 +23,12 @@ export default function Mail({ navigation }) {
               onPress={() => navigation.navigate("WritingReview")}
             ></TouchableOpacity>
           </View>
+          <View style={styles.invite}>
+            <TouchableOpacity
+              style={styles.items}
+              onPress={() => navigation.navigate("Games")}
+            ></TouchableOpacity>
+          </View>
       </View>
     </ImageBackground>
   );
@@ -64,6 +70,14 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginLeft: 120,
         marginTop: -90,
+    },
+    invite: {
+      width: 120,
+      height: 20,
+      backgroundColor: "rgba(10,0,0,0.1)",
+      marginBottom: 20,
+      marginLeft: 120,
+      marginTop: -5,
     },
   });
   

@@ -30,6 +30,7 @@ import WritingReview from "./screens/Review/WritingReview";
 import ReadingReview from "./screens/Review/ReadingReview";
 import Congratulations from "./screens/Review/Congratulations";
 import Loading from  "./screens/Loading";
+import Games from "./screens/Games";
 import { useFonts } from "expo-font";
 
 function BackButton() {
@@ -105,6 +106,7 @@ function MyStack() {
       <Stack.Screen name="WritingReview" component={WritingReview}/>
       <Stack.Screen name="ReadingReview" component={ReadingReview}/>
       <Stack.Screen name="Congratulations" component={Congratulations}/>
+      <Stack.Screen name="Games" component={Games} options={{headerShown: false}}/>
       <Stack.Screen name="InventoryFlamingo" component={InventoryFlamingo} />
       <Stack.Screen name="InventoryPlague" component={InventoryPlague} />
       <Stack.Screen name="InventoryMask" component={InventoryMask} />
