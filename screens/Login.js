@@ -8,7 +8,10 @@ import {
   TextInput,
   Switch,
 } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 export default function Login({ navigation }) {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -94,7 +97,7 @@ const styles = StyleSheet.create({
   },
   usernameContainer: {
     width: 250,
-    marginTop: 350,
+    marginTop: 250,
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
@@ -160,19 +163,20 @@ const styles = StyleSheet.create({
     color: "#F9EEDF",
     fontSize: 24,
     marginLeft: 5,
-    fontFamily: "Dekko",
+    fontFamily: 'Dekko',
   },
   forgotContainer: {
     marginTop: 30,
     borderBottomWidth: 2,
     borderColor: "#F9EEDF",
+    
   },
   forgotText: {
     color: "#F9EEDF",
     fontSize: 26,
     // textDecorationLine: "underline",
     marginLeft: 5,
-    fontFamily: "Dekko",
+    fontFamily: 'Dekko',
   },
   loginButton: {
     marginTop: 20,
