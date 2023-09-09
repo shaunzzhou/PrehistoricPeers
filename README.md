@@ -18,22 +18,22 @@ Done by:
 #### Garden
 Users are able to see their characters idling in the garden.
 
-<img src="https://github.com/shaunzzhou/PrehistoricPeers/images/Garden/Garden.png" width="500">
+<img src="https://github.com/shaunzzhou/PrehistoricPeers/tree/main/images/Garden/Garden.png" width="500">
 
 
 
 #### Leave reviews
 Users are able to leave reviews for their colleagues
 
-<img src="https://github.com/shaunzzhou/PrehistoricPeers/images/Review/Mail.png" width="500">
+<img src="https://github.com/shaunzzhou/PrehistoricPeers/tree/main/images/Review/Mail.png" width="500">
 
 #### Shop
 Users are able to purchase items using the coins earned from their reviews
 
-<img src="https://github.com/shaunzzhou/PrehistoricPeers/images/Shop/pumpkin.png" width="500">
+<img src="https://github.com/shaunzzhou/PrehistoricPeers/tree/main/images/Shop/pumpkin.png" width="500">
 
 
 #### Customise!
 Users are able to customise their dino!!
 
-<img src="https://github.com/shaunzzhou/PrehistoricPeers/images/Inventory/inventoryflamingo.png" width="500">
+<img src="https://github.com/shaunzzhou/PrehistoricPeers/tree/main/images/Inventory/inventoryflamingo.png" width="500">
