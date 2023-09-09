@@ -18,8 +18,7 @@ Done by:
 #### Garden
 Users are able to see their characters idling in the garden.
 
-<img src="https://github.com/shaunzzhou/PrehistoricPeers/assets/107353043/7fca7e60-8659-45a8-9e52-9bd8726bfb4f
-" width=50% height=50%>
+<img src="https://github.com/shaunzzhou/PrehistoricPeers/assets/107353043/7fca7e60-8659-45a8-9e52-9bd8726bfb4f" width=50% height=50%>
 
 
 
